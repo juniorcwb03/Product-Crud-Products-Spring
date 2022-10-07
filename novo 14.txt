@@ -1,0 +1,21 @@
+CREATE DATABASE Products;
+use Products;
+CREATE TABLE Products (
+                productsId Integer PRIMARY KEY,
+                productsName VARCHAR(30),
+                productsPrice VARCHAR(10),
+                productsQtd VARCHAR(50),
+                productsCategory VARCHAR(30)
+);
+INSERT INTO products (productsName, productsPrice, productsQtd, productsCategory ) 
+VALUES ('coca cola', '10,33', 20, 'Bebidas'),
+	   ('Schweppes', '8,99', 33, 'Bebidas'),
+       ('Fanta', '9,59', 36, 'Bebidas'),
+       ('Sprite', '9,59', 22, 'Bebidas');
+       
+       
+       select * from products;
+       
+
+
+
